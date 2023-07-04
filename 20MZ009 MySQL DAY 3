@@ -1,0 +1,19 @@
+create database db10;
+create table books(
+b_title varchar(30),
+b_author varchar(40),
+b_genre varchar(50),
+b_publication_year int,
+b_price int);
+insert into books values
+("cup of tea","Elavarasu","Funny","2000","500"),
+("Once upon a time","Akash","literature","2003","1100"),
+("little angel","Varshan","story","2005","1300"),
+("The Hanker","Jeeva","Poem","2010","3000"),
+("A Thief","Nandha","News","2005","2000");
+select*from Books;
+select *from books where b_title ="cup of tea";
+update books set b_price="2000" where b_title="Once upon a time";
+select* from little angel;
+delete from books where title ="A Thief";
+select  * from little angel;
