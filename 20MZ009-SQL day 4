@@ -1,0 +1,27 @@
+create database customerDB5;
+create table customer(
+c_id int,
+c_name varchar(30) primary key,
+c_address varchar(30),
+c_age int,
+c_gender varchar(20));
+insert into customer values
+(1,"aaa","salem","20","male"),
+(2,"bbb","namakkal","21","male"),
+(3,"ccc","rasipuram","22","female"),
+(4,"ddd","karur","23","male"),
+(5,"eee","dharmapuri","24","female");
+select * from customer;
+create table transaction1 (
+t_id int,
+t_sales int,
+t_purchase int,
+c_id int);
+insert into transaction1 values
+("1661900","200000","150000","1"),
+("1662312","300000","200000","2"),
+("1667187","400000","300000","3"),
+("1667890","500000","400000","4"),
+("1666908","600000","500000","5");
+select * from transaction1;
+select * from transaction1 where t_sales>=400000;
